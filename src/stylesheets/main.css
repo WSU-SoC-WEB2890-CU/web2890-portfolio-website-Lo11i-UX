@@ -1,0 +1,344 @@
+/* Your styles go here */
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+:root {
+  --blue-light: #BEE0F3;
+  --blue-muted: #CBDCE7;
+  --blue-accent: #7EC1E7;
+  --blue-button: #2488C2;
+  --blue-dark: #103C56;
+  --blue-darker: #305369;
+  --teal: #3A515F;
+  --teal-bright: #23A5F1;
+  --yellow: #30444F;
+  --white: #FFFFFF;
+  --gray-bg: #F8FCFD;
+  --gray-border: #E4E4E4;
+  --body-text: #27363F;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--gray-bg);
+  color: var(--body-text);
+}
+
+
+.navbar-custom {
+  background-color: var(--blue-dark);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-toggler-icon {
+  color: var(--white);
+}
+
+.navbar-custom .nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--blue-accent);
+}
+
+
+.hero {
+  background: linear-gradient(rgba(16, 60, 86, 0.5), rgba(16, 60, 86, .7)),
+    url('../images/backgroundimage1.png') center/cover no-repeat;
+  color: var(--white);
+  padding: 6rem 0 5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero .btn-primary {
+  background-color: var(--blue-button);
+  border-color: var(--blue-button);
+  font-weight: 600;
+  border-radius: 999px;
+  padding-inline: 2.5rem;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--blue-accent);
+  border-color: var(--blue-accent);
+}
+
+.hero-photo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--blue-dark);
+}
+
+.section-heading p {
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+}
+
+
+.project-card {
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.project-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+.project-card-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.project-card .btn-outline-primary {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+
+.project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.9);
+}
+
+
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid var(--gray-border);
+  padding: 1.25rem 1.5rem;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial-title {
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #863434;
+}
+
+
+
+.cta-banner {
+  background: linear-gradient(rgba(16, 60, 86, 0.9), rgba(16, 60, 86, 0.9)),
+    url('../img/cta-wireframes.jpg') center/cover no-repeat;
+  color: #ffffff;
+  padding: 3rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.footer {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  padding: 2rem 0 1rem;
+  margin-top: 3rem;
+}
+
+.footer a {
+  color: var(--white);
+}
+
+.footer-icons a {
+  margin-inline: 0.5rem;
+}
+
+
+.about-hero {
+  background: linear-gradient(rgba(16, 60, 86, 0.9), rgba(16, 60, 86, 0.9)),
+    url('../images/backgroundimage1.png') center/cover no-repeat;
+  color: #ffffff;
+  padding: 5rem 0 3rem;
+}
+
+.about-avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+.timeline {
+  border-left: 3px solid var(--blue-dark);
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--blue-dark);
+  position: absolute;
+  left: -2.25rem;
+  top: 1.1rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid var(--blue-dark);
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+}
+
+
+.process-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+
+.contact-hero {
+  background: linear-gradient(rgba(16, 60, 86, 0.8), rgba(16, 60, 86, 0.9)),
+    url('../images/contact-bg.png') center/cover no-repeat;
+  color: #ffffff;
+  padding: 4rem 0 3rem;
+}
+
+.contact-summary {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.contact-avatar {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 4px solid var(--blue-dark);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.project-hero {
+  background-color: var(--blue-light);
+  padding: 4rem 0 3rem;
+}
+
+.project-hero h1 {
+  font-weight: 800;
+  color: var(--blue-dark);
+}
+
+.project-meta span {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-main-img {
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.bg-light-blue {
+  background-color: var(--blue-light);
+}
+
+.text-blue-dark {
+  color: var(--blue-dark);
+}
+
+.btn-pill {
+  border-radius: 999px;
+}

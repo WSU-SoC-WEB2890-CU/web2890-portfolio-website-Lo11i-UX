@@ -6,23 +6,274 @@
   <title>Portfolio website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
+  <meta name="description" content="Lauren Barfuss UX Design">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Lauren Barfuss</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+              <li>
+                <a class="dropdown-item" href="project-lauren-photography.html">Lauren Photography</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-car-website.html">Car Website</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-rock-paper-scissors.html">Rock Paper Scissors</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-eating-on-a-dime.html">Eating on a Dime - Case Study</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-fitness-tracker.html">`Fitness Tracker`</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-weather-app.html">Weather Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- the Hero section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="mb-2">Lauren Barfuss</h1>
+          <h2 class="mb-4">UX Designer</h2>
+          <p class="mb-4">
+            I use UX, accessibility, and data decisions to create user interfaces
+            that feel intuitive and delightful for all.
+          </p>
+          <a href="#projects" class="btn btn-primary btn-pill">See my Projects</a>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="images/me.png" alt="Photo of Lauren Barfuss" class="hero-photo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Recent Projects</h2>
+          <p>Here are recent projects to see my work.</p>
+        </div>
+        <div class="row g-4 mt-3">
+          <!-- Lauren Photography website. -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/laurenphotowebsite.png" alt="Lauren Photography" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Lauren Photography</h3>
+                <p class="project-card-subtitle">Mobile photography website for Lauren.</p>
+                <a href="project-lauren-photography.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Car website project -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/carwebsitepicture.png" alt="Car website" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Car Website</h3>
+                <p class="project-card-subtitle"> Mobile website for buying cars.</p>
+                <a href="project-car-website.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Rock paper and scissors -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/rockpaperwebsite.png" alt="Rock Paper Scissors" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Rock Paper Scissors</h3>
+                <p class="project-card-subtitle">Mobile web game for Rock, Paper, Scissors</p>
+                <a href="project-rock-paper-scissors.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Cooking Website -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/CookingWebsitePicture.png" alt="Eating on a Dime" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Eating on a Dime: Case Study</h3>
+                <p class="project-card-subtitle">Website for making meals and managing recipes.</p>
+                <a href="project-eating-on-a-dime.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Fitness tracker website -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/fitnesstrackerapp.png" alt="Fitness tracker app" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Fitness Tracker</h3>
+                <p class="project-card-subtitle">JavaScript app for logging daily workouts in the browser.</p>
+                <a href="project-fitness-tracker.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Weather Application -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card">
+              <img src="images/weatherapp.png" alt="Weather App" />
+              <div class="project-card-body">
+                <h3 class="project-card-title">Weather Application</h3>
+                <p class="project-card-subtitle">Real-time weather app with API integration and saved preferences.</p>
+                <a href="project-weather-app.html" class="btn btn-outline-primary btn-sm">See Project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-banner text-center">
+          <h2 class="mb-2">Lets create something together</h2>
+          <p class="mb-4">Have a project in mind? I'd love to help you turn your ideas into reality.</p>
+          <a href="contact.html" class="btn btn-light btn-pill">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonals" class="section-padding bg-light-blue">
+      <div class="container">
+        <div class="section-heading">
+          <h2>"Testimonials"</h2>
+        </div>
+        <!-- Testimonial card -->
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Intuitive and Beautiful"</h3>
+              <p class="testimonial-role mb-2">UX Designer</p>
+              <p class="mb-0">
+                Lauren turned our complex workflow into something simple and beautiful. She stays user-focused on every
+                detail.
+              </p>
+            </article>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Effortless and Inspiring"</h3>
+              <p class="testimonial-role mb-2">Creative Director</p>
+              <p class="mb-0">
+                Her process gave our team clarity and momentum. Lauren blends empathy, research, and clean design.
+              </p>
+            </article>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Creativity with Functionality"</h3>
+              <p class="testimonial-role mb-2">Project Manager</p>
+              <p class="mb-0">
+                She makes interfaces that not only look great but also support real-world tasks and constraints.
+              </p>
+            </article>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Accessibility Comes First"</h3>
+              <p class="testimonial-role mb-2">Accessibility Specialist</p>
+              <p class="mb-0">
+                Lauren is dedicated to accessibility at every step, from color contrast to keyboard-only flows.
+              </p>
+            </article>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Modern and Fresh"</h3>
+              <p class="testimonial-role mb-2">Marketing Lead</p>
+              <p class="mb-0">
+                Her designs feel modern without being trendy. She understands brand, content, and user goals.
+              </p>
+            </article>
+          </div>
+
+          <!-- Testimonial card -->
+          <div class="col-md-6 col-lg-4">
+            <article class="testimonial-card">
+              <h3 class="testimonial-title">"Collaborative & Professional"</h3>
+              <p class="testimonial-role mb-2">Web Developer</p>
+              <p class="mb-0">
+                Working with Lauren is easy. She communicates clearly and documents user flows and specs thoroughly.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-icons mb-2">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Portfolio"><i class="bi bi-link-45deg"></i></a>
+      </div>
+      <p class="mb-0">@ Lauren Barfuss 2025</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
+
 </html>

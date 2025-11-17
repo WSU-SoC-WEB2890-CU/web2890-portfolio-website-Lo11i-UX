@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Lauren Barfuss UX Design">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Lauren Barfuss</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+              <li>
+                <a class="dropdown-item" href="project-lauren-photography.html">Lauren Photography</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-car-website.html">Car Website</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-rock-paper-scissors.html">Rock Paper Scissors</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-eating-on-a-dime.html">Eating on a Dime - Case Study</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-fitness-tracker.html">`Fitness Tracker`</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-weather-app.html">Weather Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-hero">
+    <div class="container">
+      <div class="contact-summary">
+        <h1>Contact Me</h1>
+        <p class="mb-0">Let's make your project come to life! Contact me to get started.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form section-->
+  <main class="section-padding">
+    <div class="container">
+      <div class="contact-card">
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h2 class="h5 text-blue-dark mb-1">Name</h2>
+            <p class="mb-0">Lauren Ashley Barfuss</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h2 class="h5 text-blue-dark mb-1">Email</h2>
+            <p class="mb-0">barfuss.lauren@gmail.com</p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="h5 text-blue-dark mb-1">Location</h2>
+            <p class="mb-0">UT, USA</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2 text-center mb-3 mb-md-0">
+            <img src="images/me.png" alt="Lauren Barfuss" class="contact-avatar" />
+          </div>
+          <div class="col-md-10">
+            <p class="mb-0">I typically respond within a few days. Let me know a bit about your
+              project, and I will follow up with next steps or a few questions to better
+              understand your goals.</p>
+          </div>
+        </div>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="col-md-6">
+              <label for="emailInput" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="you@example.com" required />
+            </div>
+            <div class="col-12">
+              <label for="subject" class="form-label">Project Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Tell me what you need help with"
+                required />
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="5"
+                placeholder="Share details about your project, timeline, and goals." required></textarea>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="btn btn-primary btn-pill">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-icons mb-2">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Portfolio"><i class="bi bi-link-45deg"></i></a>
+      </div>
+      <p class="mb-0">@ Lauren Barfuss 2025</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

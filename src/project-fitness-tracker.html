@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Lauren Barfuss UX Design">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Lauren Barfuss</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+              <li>
+                <a class="dropdown-item" href="project-lauren-photography.html">Lauren Photography</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-car-website.html">Car Website</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-rock-paper-scissors.html">Rock Paper Scissors</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-eating-on-a-dime.html">Eating on a Dime - Case Study</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="project-fitness-tracker.html">`Fitness Tracker`</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-weather-app.html">Weather Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="project-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1>Fitness Tracker Web App</h1>
+          <p class="lead mb-3">
+            A JavaScript-based fitness tracker that lets users log workouts in
+            the browser and see their progress over time.
+          </p>
+          <div class="project-meta">
+            <span><strong>Role:</strong> Front-End Developer & Designer</span>
+            <span><strong>Tools:</strong> HTML, CSS, JavaScript</span>
+            <span><strong>Course:</strong> WEB 2890 - JavaScript Project</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <img src="images/fitnesstrackerapp.png" alt="web applicaiton" class="img-fluid project-main-img mb-4" />
+          <h2 class="h4 mb-2">Project Overview</h2>
+          <p>
+            This project is a browser-based
+            <strong>fitness tracker</strong> built with vanilla JavaScript.
+            The goal was to create a simple tool where users can log their
+            workouts and quickly see what they've completed that day or week,
+            without needing a backend or framework.
+          </p>
+          <p>The app focuses on core JavaScript skills:working with forms, arrays of data,
+            DOM manipulation, and basicstate management in the browser.</p>
+          <h2 class="h4 mt-4 mb-2">My Responsibilities</h2>
+          <ul>
+            <li>Planned the overall layout and interaction flow.</li>
+            <li>Designed the UI using HTML/CSS with a card-style layout.</li>
+            <li>Implemented all functionality in vanilla JavaScript.</li>
+            <li>Handled validation and user feedback for the workout form.</li>
+            <li>Made the layout responsive so it works on mobile and desktop.</li>
+          </ul>
+
+          <h2 class="h4 mt-4 mb-2">Key Features</h2>
+          <h3 class="h5 mt-3">Workout logging</h3>
+          <p>
+            Users can add a new workout by filling out a form with fields such
+            as activity name, duration, type, and intensity. When the form is
+            submitted, JavaScript creates a workout object, stores it in an
+            array, and renders it into the list on the page.
+          </p>
+
+          <h3 class="h5 mt-3">Dynamic workout list</h3>
+          <p>
+            All workouts are displayed in a table or card list that updates
+            instantly when the user adds a new entry.
+          </p>
+
+          <h3 class="h5 mt-3">Summaries & totals</h3>
+          <p>
+            The tracker calculates simple summary information from the
+            workouts array. This gave me practice looping through arrays and
+            updating summary UI elements whenever the data changes.
+          </p>
+
+          <h3 class="h5 mt-3">Responsive UI</h3>
+          <p>
+            The UI is styled so that the form and workout list reflow nicely
+            on smaller screens. I used flexible widths, stacking behavior, and
+            media queries so users can interact easily from a phone or laptop.
+          </p>
+
+          <h2 class="h4 mt-4 mb-2">JavaScript Implementation Details</h2>
+          <ul>
+            <li>Defined an array of workout objects and used functions to add new workouts and re-render the list.</li>
+            <li>Used event listeners for form submission and button clicks, preventing default behavior to handle
+              everything in JavaScript.</li>
+            <li>Implemented basic validation with user-friendly error messages.</li>
+            <li> Cleaned and reset the form after each successful submission so users can quickly log multiple workouts.
+            </li>
+          </ul>
+
+          <h2 class="h4 mt-4 mb-2">What I Learned</h2>
+          <p> This project helped solidify my understanding of how JavaScript can manage state entirely in the browser.
+            I practiced:
+          </p>
+          <ul>
+            <li>Connecting forms to JavaScript logic using event listeners.</li>
+            <li>Transforming user input into structured data (objects).</li>
+            <li> Keeping the UI and data in sync by re-rendering based on the current state of the workouts array.</li>
+            <li>Thinking about user flows—how quickly someone can log an activity and visually see that it “counted.”
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-light p-3 rounded-4 mb-4">
+          <h2 class="h5 mb-2">Links</h2>
+          <ul class="small mb-0">
+            <li>
+              Live Demo:
+              <a href="https://stupendous-lollipop-d0619e.netlify.app/" target="_blank" rel="noopener">
+                Fitness Tracker on Netlify
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="index.html#projects" class="btn btn-outline-primary btn-pill">
+            Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-icons mb-2">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Portfolio"><i class="bi bi-link-45deg"></i></a>
+      </div>
+      <p class="mb-0">@ Lauren Barfuss 2025</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
