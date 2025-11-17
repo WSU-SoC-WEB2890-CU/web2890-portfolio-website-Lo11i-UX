@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Lauren Barfuss UX Design">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="stylesheets/main.scss">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Lauren Barfuss</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+              <li>
+                <a class="dropdown-item" href="project-lauren-photography.html">Lauren Photography</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-car-website.html">Car Website</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-rock-paper-scissors.html">Rock Paper Scissors</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="project-eating-on-a-dime.html">Eating on a Dime - Case Study</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-fitness-tracker.html">`Fitness Tracker`</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="project-weather-app.html">Weather Application</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="project-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1>Eating on a Dime - UX Case Study</h1>
+          <p class="lead mb-3">
+            A responsive recipe experience focused on fast, budget-friendly
+            cooking with clear ingredient lists, smart serving sizes, and a
+            beginner-friendly seasonings guide.
+          </p>
+          <div class="project-meta">
+            <span><strong>Role:</strong> UX Designer & Front-End Developer</span>
+            <span><strong>Course:</strong> WEB 2890 - Project 2</span>
+            <span><strong>Tools:</strong> HTML, CSS, Bootstrap 5, JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <img src="images/CookingWebsitePicture.png" alt="home page" class="img-fluid project-main-img mb-4" />
+          <h2 class="h4 mb-2">Project Overview</h2>
+          <p>
+            For Project 2 in WEB 2890, I redesigned a small recipe website
+            called Eating on a Dime - Family Edition. The
+            goal was to create a responsive, Bootstrap-based experience that
+            made it easy for busy families to find budget-friendly recipes
+            without scrolling through long stories or cluttered layouts.
+          </p>
+          <p>
+            I designed and coded a multi-page site including a recipe-focused
+            home page, detailed recipe pages (for example:
+            <em>Chicken Noodle Soup</em>), and a structured
+            <em>Seasonings Guide</em> to help newer cooks understand how to
+            use spices confidently.
+          </p>
+
+          <h2 class="h4 mt-4 mb-2">Problem</h2>
+          <p>
+            Many recipe sites are packed with ads, long intros, and confusing
+            layouts. For this project I defined the core problem as:
+          </p>
+          <blockquote class="border-start ps-3">
+            'Home cooks need <strong>fast, scannable recipes</strong> that get
+            straight to ingredients, serving sizes, and steps, without wasting
+            time or money on confusing instructions.''
+          </blockquote>
+          <p>
+            In addition, new cooks often feel unsure about seasonings—how
+            much to use, what they pair with, and what to avoid-so I wanted
+            the site to quietly teach them as they cooked.
+          </p>
+
+          <h2 class="h4 mt-4 mb-2">Goals</h2>
+          <ul>
+            <li>
+              Surface the most important information first: ingredients, total
+              time, servings, and difficulty.
+            </li>
+            <li>
+              Make recipes easy to skim with clear sectioning and numbered
+              steps.
+            </li>
+            <li>
+              Create an approachable <strong>Seasonings Guide</strong> with
+              "pairs well with / avoid with / proportions / why I like it"
+              for each spice.
+            </li>
+            <li>
+              Build everything with <strong>semantic HTML</strong>,
+              <strong>accessible labels</strong>, and responsive Bootstrap
+              layouts.
+            </li>
+          </ul>
+
+          <h2 class="h4 mt-4 mb-2">Information Architecture</h2>
+          <p>The final IA for this small site:</p>
+          <ul>
+            <li>
+              <strong>Home</strong> - hero statement, featured recipes,
+              seasonings teaser, footer newsletter.
+            </li>
+            <li>
+              <strong>Recipe Pages</strong> (e.g., Chicken Noodle Soup,
+              Cookies) - hero image, summary tiles, servings calculator,
+              ingredients, instructions.
+            </li>
+            <li>
+              <strong>Seasonings Guide</strong> - grid of card-based seasoning
+              profiles.
+            </li>
+
+            <h2 class="h4 mt-4 mb-2">Key Design Decisions</h2>
+
+            <h3 class="h5 mt-3">1. "Fast, tasty, budget-friendly" hero</h3>
+            <p>
+              The home page opens with a simple value statement:
+              <strong>"Fast, tasty, budget-friendly"</strong> and a sub-line,
+              "Straight to ingredients, steps, and smart serving sizes.""
+            </p>
+            <h3 class="h5 mt-3">2. Featured Recipe Cards</h3>
+            <p>
+              I highlighted two core recipes—Chicken Noodle Soup and Chocolate
+              Chip Cookies—using custom Bootstrap cards:
+            </p>
+            <ul>
+              <li>Recipe image with alt text.</li>
+              <li>Short one-sentence description.</li>
+              <li>Star rating visual with review count.</li>
+              <li>Quick meta row: total time + difficulty badge.</li>
+            </ul>
+            <p>
+              This structure makes it easy to compare recipes at a glance. The
+              cards are responsive: three across on large screens, two on
+              medium, one on mobile.
+            </p>
+
+            <h3 class="h5 mt-3">3. Seasonings Spotlight & Guide</h3>
+            <p>
+              New cooks often know salt and pepper but feel lost beyond that, so
+              I created two layers:
+            </p>
+            <ol>
+              <li>
+                <strong>Seasoning Spotlight</strong> on the home page with three
+                "starter" spices (Garlic Powder, Onion Powder, Smoked Paprika).
+              </li>
+              <li>
+                A full <strong>Seasonings Guide</strong> page with a grid of
+                detailed cards.
+              </li>
+            </ol>
+            <p>
+              Each card uses a consistent four-quadrant layout:
+            </p>
+            <ul>
+              <li>Pairs Well With</li>
+              <li>Avoid With</li>
+              <li>Proportions (how much to use)</li>
+              <li>Why I Like It (personal, friendly guidance)</li>
+            </ul>
+            <p>This turns intimidating spice jars into approachable, practicaltips that match the "family edition" tone.
+            </p>
+
+            <img src="images/seasons.png" class="img-fluid rounded mb-4" />
+
+
+            <h2 class="h4 mt-4 mb-2">Accessibility & Semantics</h2>
+            <ul>
+              <li>Used <strong>semantic headings</strong> (H13H3) to reflect the content structure.</li>
+              <li>Added <strong>aria-labels</strong> to icon-only buttons.</li>
+              <li>Buttons vs. links: Call to actions that trigger actions.</li>
+              <li>Colors chosen to keep sufficient contrast against white and darkbackgrounds.</li>
+            </ul>
+
+            <h2 class="h4 mt-4 mb-2">What I Learned</h2>
+            <ul>
+              <li>
+                How to balance visual design with strict content priorities so
+                users can find what they need quickly.
+              </li>
+              <li>
+                How to structure UI copy in a voice that feels friendly and
+                encouraging instead of intimidating.
+              </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="bg-light p-3 rounded-4 mb-4">
+            <h2 class="h5 mb-2">Project Details</h2>
+            <ul class="small mb-0">
+              <li>WEB 2890 Project 2 - multi-page Bootstrap site.</li>
+              <li>3 main templates: Home, Recipe Detail, Seasonings Guide.</li>
+              <li>Responsive across desktop, tablet, and mobile.</li>
+            </ul>
+          </div>
+
+          <div class="bg-light p-3 rounded-4 mb-4">
+            <h2 class="h5 mb-2">Links</h2>
+            <ul class="small mb-0">
+              <li>
+                Live Site:
+                <a href="https://idyllic-lokum-1a5d61.netlify.app/" target="_blank">
+                  Eating on a Dime - Family Edition
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-light p-3 rounded-4 mb-4">
+            <h2 class="h5 mb-2">Responsibilities</h2>
+            <ul class="small mb-0">
+              <li>Concept definition & IA</li>
+              <li>Wireframes & visual design</li>
+              <li>Front-end implementation</li>
+              <li>Accessibility & copywriting</li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <a href="index.html#projects" class="btn btn-outline-primary btn-pill">
+              Back to Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-icons mb-2">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Portfolio"><i class="bi bi-link-45deg"></i></a>
+      </div>
+      <p class="mb-0">@ Lauren Barfuss 2025</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
